@@ -7,60 +7,87 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: #111;
-            color: #fff;
-            text-align: center;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
         }
 
         header {
-            background: #222;
+            text-align: center;
             padding: 20px;
+            background: #1e293b;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
-            color: #00ffd5;
+            color: #38bdf8;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
         }
 
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            padding: 20px;
+            margin-top: 20px;
         }
 
         .card {
-            background: #1c1c1c;
-            padding: 15px;
+            background: #1e293b;
             border-radius: 10px;
-            transition: transform 0.3s;
+            overflow: hidden;
+            transition: 0.3s;
         }
 
         .card:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
 
-        img {
+        .card img {
             width: 100%;
-            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
         }
 
-        p {
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            color: #38bdf8;
+        }
+
+        .card p {
             font-size: 14px;
             line-height: 1.5;
         }
 
-        a {
-            color: #00ffd5;
-            text-decoration: none;
+        table {
+            width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #38bdf8;
+        }
+
+        th {
+            background: #38bdf8;
+            color: black;
         }
 
         footer {
-            margin-top: 20px;
+            text-align: center;
             padding: 15px;
-            background: #222;
+            background: #1e293b;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -68,46 +95,109 @@
 <body>
 
 <header>
-    <h1>🎨 Virtual Art Gallery</h1>
-    <p>Welcome to the world where Humans meet AI</p>
+    <h1>VIRTUAL ART GALLERY</h1>
+    <p>Welcome to the Best Art of your life</p>
 </header>
 
-<div class="gallery">
+<div class="container">
 
-    <div class="card">
-        <h3>The Human Machine Meetup</h3>
-        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="AI Meetup">
-        <p>Humans and AI collaborate to create innovation and explore new possibilities.</p>
-    </div>
+    <div class="gallery">
 
-    <div class="card">
-        <h3>Human vs Artificial Mind</h3>
-        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" alt="AI vs Human">
-        <p>Emotion meets computation. A contrast between creativity and logic.</p>
-    </div>
+        <!-- Card 1 -->
+        <div class="card">
+            <a href="https://images.unsplash.com/photo-1677442136019-21780ecad995" target="_blank">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600" alt="AI Meetup">
+            </a>
+            <div class="card-content">
+                <h3>The Human Machine Meetup</h3>
+                <p>A meetup between humans and AI represents a transformative moment where creativity meets computation.</p>
+            </div>
+        </div>
 
-    <div class="card">
-        <h3>The Race</h3>
-        <img src="https://images.unsplash.com/photo-1581091012184-7c4c7f6a6b9b" alt="Race">
-        <p>Speed vs imagination. Who leads the future?</p>
-    </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" target="_blank">
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600" alt="Human vs AI">
+            </a>
+            <div class="card-content">
+                <h3>The Human Mind vs AI</h3>
+                <p>Humans bring emotion and creativity, while AI brings speed and logic. Together they reshape the future.</p>
+            </div>
+        </div>
 
-    <div class="card">
-        <h3>Human Strength</h3>
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Survival">
-        <p>Adaptability and resilience define human survival.</p>
-    </div>
+        <!-- Card 3 FIXED -->
+        <div class="card">
+            <a href="https://images.unsplash.com/photo-1581091870627-3b5b4c6c1c1a" target="_blank">
+                <img src="https://images.unsplash.com/photo-1581091870627-3b5b4c6c1c1a?w=600" alt="AI Race">
+            </a>
+            <div class="card-content">
+                <h3>The Race Between AI and Human</h3>
+                <p>Not a competition, but a collaboration where intelligence meets imagination.</p>
+            </div>
+        </div>
 
-    <div class="card">
-        <h3>The Climax</h3>
-        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Climax">
-        <p>The future belongs to collaboration, not competition.</p>
+        <!-- Card 4 -->
+        <div class="card">
+            <a href="https://images.unsplash.com/photo-1508672019048-805c876b67e2" target="_blank">
+                <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600" alt="Human Strength">
+            </a>
+            <div class="card-content">
+                <h3>Human Strength</h3>
+                <p>Adaptability, resilience, and cooperation define the core of human survival.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <a href="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" target="_blank">
+                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=600" alt="Climax">
+            </a>
+            <div class="card-content">
+                <h3>The Climax</h3>
+                <p>The real victory lies in collaboration between human creativity and AI capability.</p>
+            </div>
+        </div>
+
     </div>
 
 </div>
 
+<!-- Table -->
+<table>
+    <tr>
+        <th>Artwork</th>
+        <th>Medium</th>
+        <th>Year</th>
+    </tr>
+    <tr>
+        <td>The Human Machine Meetup</td>
+        <td>Digital Art</td>
+        <td>2025</td>
+    </tr>
+    <tr>
+        <td>The Human Mind vs AI</td>
+        <td>Illustration</td>
+        <td>2025</td>
+    </tr>
+    <tr>
+        <td>The Race Between AI and Human</td>
+        <td>AI Art</td>
+        <td>2025</td>
+    </tr>
+    <tr>
+        <td>Human Strength</td>
+        <td>Photography</td>
+        <td>2025</td>
+    </tr>
+    <tr>
+        <td>The Climax</td>
+        <td>Mixed Media</td>
+        <td>2025</td>
+    </tr>
+</table>
+
 <footer>
-    <p>Created by Himanshu | 🚀 Learning by Building</p>
+    <p>Made by You • Not Basic Anymore</p>
 </footer>
 
 </body>
